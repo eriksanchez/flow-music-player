@@ -15,6 +15,11 @@ const reducer = (state, action) => {
         ...state,
         user: action.user,
       };
+    case "SET_PLAYING":
+      return {
+        ...state,
+        playing: action.playing,
+      };
     case "SET_TOKEN":
       return {
         ...state,

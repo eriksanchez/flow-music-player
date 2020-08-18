@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import Login from "./Login";
-import { getTokenFromUrl } from "./spotify";
+import Login from "./components/Login";
+import { getTokenFromUrl } from "./components/spotify";
 import SpotifyWebApi from "spotify-web-api-js";
-import Player from "./Player";
-import { useDataLayerValue } from "./DataLayer";
+import Player from "./components/Player";
+import { useDataLayerValue } from "./components/DataLayer";
 
 const spotify = new SpotifyWebApi();
 
